@@ -1,0 +1,202 @@
+@charset "utf-8";
+/* CSS Document */
+/*  SISUKORD
+------------------------------------------
+    1.ÜLDINE
+    2.PEALKIRJAD JA TEKST
+    3.HEADER
+    4.SISU
+    5.FOOTER
+    6.TEENUSED
+    7.HINNAKIRI
+    8.KONTAKT
+------------------------------------------*/
+ 
+/*  1.ÜLDINE
+------------------------------------------*/
+body
+{
+	background-color:#9EB4C7;
+	margin:0px;
+}
+
+#mainformat
+{
+	width:90%;
+	margin: auto;
+}
+a
+{
+	text-decoration: none;
+}
+img
+{
+	width:170px;
+	height:130px;	 
+}
+figure
+{
+	margin:0px;
+}
+/*  2.PEALKIRJAD JA TEKST
+------------------------------------------*/
+h1
+{
+	font-size:100px;
+    line-height:130px;
+    color:#fff;
+    padding-top:80px;
+    letter-spacing:7px;
+	margin:0px;
+}
+h2
+{
+    text-transform:uppercase;
+    font-size:16px;
+    letter-spacing:4px;
+    font-weight:400;
+    margin:0px 0px 40px 0px;
+    color:#ccc;
+}
+ 
+/*  3.HEADER
+------------------------------------------*/
+ #headerformat
+ {
+	text-align:center;
+	background-color:#8AADB0;
+	
+ }
+ nav ul 
+ {
+	margin:0px;
+	padding:0px;
+ }
+ nav ul li
+ {
+	list-style-type: none;
+	display: inline-block;
+ }
+ nav ul li a
+ {
+    display: block;
+    font-size:22px;
+    color: #fff;
+    padding:40px 80px 40px 80px;
+	border-bottom:transparent 4px solid;
+}
+nav ul li a:hover
+{
+	color: #666;
+    background-color:#DBFF94;
+    border-bottom: 4px solid #FF9966;
+	background-image:url(Image/small-house-hi.png);
+	background-position:left;
+	background-repeat: no-repeat;
+}
+ 
+/*  4.SISU
+------------------------------------------*/
+ #textformat
+ {
+	background-color:#EBEBEB;
+	padding:10px;
+	text-align: justify;
+	display:block;
+	height:860px;
+ }
+ .vasak
+ {
+	width:70%;
+    display: block;
+    position: relative;
+    float: left;
+ }
+ .parem
+ {
+	width:25%;
+    display: block;
+    position: relative;
+    float: right;
+ }
+ .vasakaside
+ {
+	width:60%;
+    display: block;
+    position: relative;
+    float: left;
+ }
+ .paremaside
+ {
+	width:40%;
+    display: block;
+    position: relative;
+    float: right;
+ }
+article
+{
+	border: 1px dashed #A4A47F;
+	padding:15px;
+	margin-top:10px;
+}
+.article
+{
+	border:0px;
+}
+span
+{
+	text-transform:uppercase;
+	letter-spacing:1px;
+}
+#name
+{
+	font-weight: 900;
+	text-transform: none;
+}
+#email
+{
+	font-style: oblique;
+	text-transform: none;
+}
+#phone
+{
+	font-style: italic;
+}
+.blocking
+{
+	display:inline-block;
+	margin-top:20px;
+}
+.centerform
+{
+	text-align:center;
+}
+.centerformradius
+{
+    border-radius: 30px;
+}
+.centreblock
+{
+	text-align:center;
+}
+ 
+/*  5.FOOTER
+------------------------------------------*/
+ footer
+ {
+	clear:both;
+	width: 100%;
+    text-align: center;
+	padding-bottom:20px;
+}
+ 
+/*  6.TEENUSED
+------------------------------------------*/
+ 
+ 
+/*  7.HINNAKIRI
+------------------------------------------*/
+ 
+ 
+/*  8.KONTAKT
+------------------------------------------*/

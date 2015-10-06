@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Альбом</title>
+
+	
+	<link rel="stylesheet" type="text/css" href="css/style-jquery-lightbox.css?version=45" />  
+	
+	<script type="text/javascript" src="js/jquery-1.2.1.pack.js"></script>
+    	<script type="text/javascript" src="js/jquery.idTabs.pack.js"></script>
+    	<script type="text/javascript">
+		$(function() {
+			$('ul.idTabs').idTabs('overview');
+		});
+	</script>
+    	<script type="text/javascript" src="js/jquery.lightbox-0.5.pack.js"></script>
+    	<script type="text/javascript">
+	$(function() {
+		$('#gallery a').lightBox({fixedNavigation:true});
+	});
+    	</script>
+</head>
+<body>
+<!-- Фотогалерея -->
+<div id="galery" class="tab">
+
+                <div id="gallery">
+                	<ul>
+                    	<li>
+                        	<a href="photos/1.jpg" title=""><img src="photos/1s.jpg" width="72" height="72" alt="" /></a>
+                        </li>
+                    	<li>
+                        	<a href="photos/2.jpg" title=""><img src="photos/2s.jpg" width="72" height="72" alt="" /></a>
+                        </li>
+                    	<li>
+                        	<a href="photos/3.jpg" title=""><img src="photos/3s.jpg" width="72" height="72" alt="" /></a>
+                        </li>
+                    	<li>
+                        	<a href="photos/4.jpg" title=""><img src="photos/4s.jpg" width="72" height="72" alt="" /></a>
+                        </li>
+                        <li>
+                        	<a href="photos/5.jpg" title=""><img src="photos/5s.jpg" width="72" height="72" alt="" /></a>
+                        </li>
+                    </ul>
+				</div><!-- / gallery -->
+</div>
+
+</body>
+</html>

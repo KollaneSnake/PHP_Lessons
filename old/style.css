@@ -1,0 +1,157 @@
+﻿
+
+/*========== I Body ==============*/
+
+body
+{
+	margin:auto;
+	max-width:1000px;
+	font-family:Arial, Helvetica, sans-serif;
+	background:#E2BE74;
+}
+
+header
+{
+	text-align:center;
+	background:#F9AA03;
+}
+
+nav
+{
+	background:#D9CDB2;
+}
+
+section
+{
+	background:#E2AA74;
+	width:70%;
+	height:auto;
+	display:block;
+	float:left;
+	text-align:justify;
+}
+
+aside
+{
+	background:#FF9129;
+	float:left;
+	width:30%;
+	display:block;
+	height:auto;
+}
+
+footer
+{
+	height:60px;
+	clear:both;
+	display:block;
+	background:#6E8286;
+	text-align:center;
+}
+/*========== II Header ==============*/
+
+h1
+{
+	text-transform:uppercase;
+	font-size:110px;
+	color:#A6997D;
+	padding:75px 0px 30px 0px;
+}
+
+h2
+{
+	text-transform:uppercase;
+	font-size:18px;
+	color:;
+	padding-bottom:15px;
+	letter-spacing:2px;
+}
+
+/*========== III Navigator ==============*/
+
+
+nav ul li
+{
+	position: relative;
+	display:inline-block;
+}
+
+nav ul li a
+{
+	text-decoration:none;
+	display:block;
+	font-size:24px;
+	color:#A6997D;
+	padding:20px 7px 20px 105.8px;
+	border-bottom:transparent 3px solid;
+}
+
+nav ul li a:hover
+{
+	color: #666;
+    background-color:#F9AA03;
+    border-bottom:#2098AF 3px solid;
+}
+
+/*========== IV Section ==============*/
+
+section h3
+{
+	text-align:center;
+	margin:20px 0px 35px 0px;
+	font-weight:bold;
+}
+
+section p 
+{
+	line-height:135%;
+	margin:0px 15px 25px 30px;
+}
+
+section blockquote
+{
+	width:50%;
+	margin:auto;
+}
+
+.quato
+{
+	text-align:right;
+	font-style:italic
+}
+
+section figure
+{
+	float: left;
+	width: 160px;
+	margin:60px 5px 30px 5px;
+}
+section figure img
+{
+	width:150px;
+	height:150px;
+	border-radius: 60px;
+}
+
+/*========== IV Aside ==============*/
+
+
+
+/*========== IV Footer ==============*/
+
+
+
+/*==========  Mobile Version 480px ==============*/
+
+@media only screen and (max-width:480px)
+{
+	section
+	{
+		width:100%;
+		/*font-size:*/
+	}
+	aside
+	{
+		width:100%;
+	}
+}

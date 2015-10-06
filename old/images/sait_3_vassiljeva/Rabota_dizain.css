@@ -1,0 +1,210 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+/*--------------------Общее-----------------------------------*/
+body {
+	margin: 0px;
+	padding: 0px;
+	background: #FFC url(image/wild_flowers.png);
+	font-family:Verdana, Geneva, sans-serif;
+}
+#wrap{
+	max-width: 1000px;
+	/*background-color:#FC0;надо убрать*/
+	/*height: 1000px;/*надо убрать*/
+	margin:auto; /*выравнивание в центр коробки-блока*/
+	background-color:#CCC;
+}
+
+/*--------------------Шапка-----------------------------------*/
+header{
+	text-transform:uppercase;
+	width: 100%;
+	min-height: 190px;
+	text-align:center;
+	font-size:86px;
+	background-color: #3C0;
+}
+
+.logocat{
+	padding:15px;
+	display:block;
+	float:left;
+	position: absolute;
+	width: 206px;
+	height:160px;
+}
+
+.desc{
+	font-size:16px;
+	padding: 0px;
+	margin: 0px;
+}
+/*--------------------Меню------------------------------------*/
+#main{
+	/*width: 100%;*//*это надо убоать*/
+	/*height: 50px;*//*это надо убоать*/
+	background-color:#999;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	
+}
+#main ul{
+	margin:0px;
+}
+#main ul li{
+	position:relative;
+	display:inline-block;
+	max-width:300px;
+	/*margin-bottom:20px;/*отступ вниз в 20px*/		
+}
+
+#main ul li a{
+	display:block;
+	font-size:15px;
+	color: #000;
+	padding:26px;
+	text-decoration:none;
+	border-bottom:transparent 3px solid;
+	
+}
+#main ul li a:hover{/*псевдо класс*/
+	color:#FFF;
+	background-color:#090;
+	border-bottom:#F00 3px solid;
+}
+/*--------------------Лево------------------------------------*/
+#content{
+	width: 70%;
+	height: auto;
+	background-color:#CCC;
+	float:left;/*обтекание*/	
+	font-size:20px;
+	text-align: justify;
+}
+#content h1{
+	text-align:center;
+}
+aside h1{
+	text-align:center;
+}
+.width100 {
+	width: 100%;
+}
+.otstup {
+	padding: 25px 15px 25px 25px;
+}
+.persona {
+	float: left;
+	margin: 15px;
+	padding: 15px;
+	width: 160px;
+	font-size: 12px;
+	color: #666;
+}
+.persona img {
+	max-width: 180px;
+	max-height: 180px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+/*--------------------Право-----------------------------------*/
+aside{
+	font-size:12px;
+	width:30%;
+	height: auto;
+	background-color:#CCC;
+	padding-top:20px;	
+	float:left;/*обтекание*/
+}
+aside h1{/*слово меню*/
+	font-size:25px;
+	
+}
+.right2{
+	margin:15px;
+	min-height: 80px;
+	background-color:#999;
+	/*border: 1px solid #FFF;*/
+	padding:20px;
+}
+.right2 img{
+	float:left;
+	padding-right:10px;
+}
+.right2 h2{/*заголовок спарва*/
+	font-size:15px;
+}
+/*---------------------------------------------------------------*/
+.right2 ul a{
+	text-decoration:none;
+	color:#9900CC;
+	padding-left: 20px;
+	background-repeat:no-repeat;
+}
+.right2 ul a:hover{
+	text-decoration:underline;
+	color: #F00;
+}
+.right2 ul{
+	list-style-type:none;
+	padding:0px;
+}
+
+/*--------------------Подвал----------------------------------*/
+footer{
+	width: 100%;
+	height: 70px;
+	background-color:#999;
+	clear: both;/*отменяет обтекание*/
+	text-align:center;
+	padding-top:30px;
+}
+
+/*---------------Для мобильника (разрешение 480)--------------------------------------------*/
+/*ставится в самый низ*/
+@media only screen and (max-width: 480px)
+{
+	#content {
+		width:100%;
+		font-size:12px;
+		padding:0px;	
+	}
+	aside{
+		width:100%;
+	}
+	header{
+		font-size:40px;
+	}
+	#main ul li a{
+		font-size:13px;
+		padding:13px;	
+}
+.logocat{
+	padding:7px;
+	width: 100px;
+	height:78px;
+	position: relative;
+}
+.desc{
+	font-size:8px;
+}
+.right2 h2{
+	font-size:12px;
+}
+aside h1{/*слово меню*/
+	font-size:15px;	
+}
+
+
+}
+
+
+
+
+
+
+
