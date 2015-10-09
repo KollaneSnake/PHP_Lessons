@@ -30,6 +30,43 @@
 			}
 		}
 		echo "<br>".$text;
+
+	//-----------------Prossesing and showing
+		echo "<h2>Variant_2</h2>";
+		
+		for ($i=0; $i < count($country); $i++) 
+		{ 
+			if ($i==count($country)-1) 
+			{
+				echo $country[$i];
+			}
+			else 
+			{
+				echo $country[$i].', ';
+			}
+		}
+		
+		echo "<br><em>using trim</em>";
+		$text="";
+		
+		for ($i=0; $i < count($country); $i++) 
+		{ 
+			$text.=$country[$i].", ";
+		}
+		echo "<br>".trim($text,", ");
+
+	//-----------------Prossesing and showing
+		echo "<h2>Variant_3</h2>";
+		$text="";
+		
+		for ($i=0; $i < count($country); $i++) 
+		{ 
+			$text.='<li>'.$country[$i].'</li>';
+		}
+		echo "<ul>".$text."</ul>";
+
+		echo "<br>Total count country: ".count($country);
+		
 	/*
 	$a == $b 	true если $a равно $b
 	$a === $b 	true если $a равно $b и они имеют один и тот же тип
