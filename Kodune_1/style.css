@@ -1,0 +1,29 @@
+#colortab
+{
+	border: 1px solid black;
+	border-collapse: collapse;
+	text-align: center;
+}
+.colorPair
+{
+	border: 1px solid black;
+	width: 40;
+	background-color: lightgreen;
+}
+.colorNoPair
+{
+	border: 1px solid black;
+	width: 40;
+	background-color: yellow;
+}
+.colorless
+{
+	border: 1px solid black;
+	width: 40;
+}
+.colorh
+{
+	border: 1px solid black;
+	width: 40;
+	background-color: lightgrey;
+}
