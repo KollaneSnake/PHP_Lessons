@@ -29,7 +29,7 @@
 		$action="/";
 
 		my_calc("$n1","$n2","$action");
-		echo make_table(7,7);
+		echo make_table(7,6);
 
 
 
