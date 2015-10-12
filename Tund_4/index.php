@@ -14,7 +14,12 @@
 	<!--Start menyy           -->
         <div class="menu">
 	<!-----------------------------------000 START-->		
-        
+        <?php
+            include "model/nav_meny.php";
+            $meny=arrayNav();
+            include "controller/meny_layout.php";
+
+        ?>
 	<!-----------------------------------000 END-->			
         </div>
  <!--Start content           -->       
@@ -33,12 +38,14 @@
     
     </div>    
 
-<!--Start footer           -->	    
+
     <div id="footer">                                              
         <div class="left_footer">
-     <!----------------------------------222 START--->  		
-		
-     <!----------------------------------222 END--->  	
+      		
+		<?php
+         include "controller/meny_layout.php";
+         ?>
+     	
 	 
 		</div>
 		<div class="right_footer">Design &copy; 2015</div>  
