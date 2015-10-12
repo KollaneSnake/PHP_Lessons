@@ -11,7 +11,7 @@
 		<?php
 		 require "make_table.php";
 
-		 echo color_table(5,7);
+		 echo color_table(25,321);
 
 		?>
 </body>
