@@ -10,8 +10,10 @@
 
 		<?php
 		 require "make_table.php";
+		 $tableRows=3;
+		 $tableColumns=5;
 
-		 echo color_table(25,321);
+		 echo color_table($tableColumns,$tableRows);
 
 		?>
 </body>
