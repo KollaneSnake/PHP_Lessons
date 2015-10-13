@@ -13,24 +13,28 @@
     </div>
 	<!--Start menyy           -->
         <div class="menu">
-	<!-----------------------------------000 START-->		
+	<!-- 000 START-->		
         <?php
             include "model/nav_meny.php";
             $meny=arrayNav();
             include "controller/meny_layout.php";
 
         ?>
-	<!-----------------------------------000 END-->			
+	<!-- 000 END-->			
         </div>
  <!--Start content           -->       
     <div class="center_content">
     
      	<div class="center_left">
         	<div class="title_welcome"><span class="red">Образование</span> в Эстонии</div>
-	<!-----------------------------------111 START-->
+	<!-- 111 START-->
 	
-	
-     <!----------------------------------111 END-->          
+	<?php
+
+        include "view/view.php";
+
+    ?>
+     <!-- 111 END-->          
             
             
         </div>  
