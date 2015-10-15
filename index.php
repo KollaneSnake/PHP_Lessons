@@ -25,6 +25,20 @@
 				}
 			?>
 			<a href="http://blogs.msdn.com/b/davrous/archive/2013/06/13/tutorial-series-learning-how-to-write-a-3d-soft-engine-from-scratch-in-c-typescript-or-javascript.aspx">3D soft engine</a>
+		<?php
+				$str='red, blue, green, yellow';
+				$colors=explode(', ', $str);
+				echo "<br>".$str."<br>";
+				print_r($colors);
+
+				$pasta = array('spaghetti', 'penne', 'macaroni');
+
+				// add an element to the beginning
+
+				array_unshift($pasta, 'tagliatelle');
+
+				print_r($pasta);
+		?>
 	</div>
 </body>
 </html>
