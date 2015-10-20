@@ -1,0 +1,22 @@
+<?php
+$page = array();
+$page['title']='Product Catalog';
+/* once the file is imported, the variables set above will become available to it */
+
+// include the page header
+
+include('header.php');
+
+?>
+
+
+
+<!-- HTML content here -->
+
+<?php
+
+// include the page footer
+
+include('footer.php');
+
+?>

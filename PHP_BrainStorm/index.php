@@ -14,6 +14,9 @@
 	<hr>
 	<h2>2.Array</h2>
 	<?php include "array.php" ?>
+	<hr>
+	<h2>3.File manipulating</h2>
+	<?php include "file.php" ?>
 
 	<h1>Links!!!</h1>
 	<a href="http://devzone.zend.com/266/php-101-part-5-rank-and-file/">part 5</a>
