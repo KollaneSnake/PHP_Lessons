@@ -26,7 +26,7 @@ if (isset($_SESSION["rankU"]) )
 		echo "<br>Kasutaja pass ".$_SESSION["passU"];	
 }
 ?>
-<!--------------------------------------->
+<!----------------- ---------------------->
 <br><br><a href="#" id="tagasi"  style="margin-left: 100px;">Tagasi</a>
 	</div>
  <script src="js/jquery.min.js"></script>
