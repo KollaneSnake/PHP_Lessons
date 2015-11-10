@@ -17,12 +17,12 @@
 	<hr>
 	<h2>3.File manipulating</h2>
 	<?php include "file.php" ?>
+	<h2>4. OOP</h2>
+	<?php include "class.php" ?>
+	<h2>5. MySQL</h2>
+	<?php include "sql.php" ?>
 
 	<h1>Links!!!</h1>
-	<a href="http://devzone.zend.com/266/php-101-part-5-rank-and-file/">part 5</a>
-	<a href="http://devzone.zend.com/9/php-101-part-6-functionally-yours/">part 6</a>
-	<a href="http://devzone.zend.com/10/php-101-part-7-the-bear-necessities/">part 7</a>
-	<a href="http://devzone.zend.com/12/php-101-part-8-databases-and-other-animals_part-1/">part 8</a>
 	<a href="http://devzone.zend.com/14/php-101-part-9-sqlite-my-fire_part-1/">part 9</a>
 	<a href="http://devzone.zend.com/16/php-101-part-10-a-session-in-the-cookie-jar/">part 10</a>
 	<a href="http://devzone.zend.com/17/php-101-part-11-sinfully-simple/">part 11</a>

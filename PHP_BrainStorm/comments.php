@@ -10,3 +10,5 @@
 <p> <a href="index2.php">Make table</a></p>
 <h3>1.6 sizeof()</h3>
 <p> Return number of how many elements is in array </p>
+<h3>1.7 Passing by reference</h3>
+<p>function(&$varible) - dont copy, direct varible changing</p>

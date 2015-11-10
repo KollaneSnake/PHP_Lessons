@@ -60,4 +60,26 @@ echo $data;
 <p>Require = fatal error, end of script.<br>
 Include = warning, script continue working<br>
 require_once() and include_once(),
-ensure that file isn't raded in twise</p>
+ensure that file isn't readed in twise</p>
+<h3>3.3 Write to file</h3>
+<h4>3.3.1 Way One</h4>
+<p>// set file to write<br>
+$file = '/tmp/dump.txt';<br>
+// open file<br>
+$fh = fopen($file, 'w') or die('Could not open file!');<br>
+// write to file<br>
+fwrite($fh, "Look, Ma, I wrote a file!<br>
+") or die('Could not write to file');<br>
+// close file<br>
+fclose($fh);</p>
+<h4>3.3.2 .Way Two</h4>
+<p>
+
+// set file to write<br>
+$filename = '/tmp/dump.txt';<br>
+
+// write to file<br>
+
+file_put_contents($filename, "Look, Ma, I wrote a file!")<br>
+ or die('Could not write to file');
+</p>
