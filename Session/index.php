@@ -29,10 +29,16 @@
 		        $(".testSignUp").toggle();
 		    });
 		});
+
+		$('.up').change(function(){		});
+
+		$('.live').change(function(){		});
+
+
 	</script>
 </head>
 <body>
-
+	<div class='up'>
 	<?php 
 		if(isset($_SESSION['kasutaja']))
 		{
@@ -49,6 +55,7 @@
 			echo '<button class="signUp">Sign Up</button>';
 		}
 	?>
+	</div>
 
 	<div class='testSignUp'>
 		<?php 
@@ -60,12 +67,14 @@
 	</div>
 
 	<p>Hello you are 
+		<div class='live'>
 		<?php 
 			if(isset($_SESSION['kasutaja']))
 				echo $_SESSION['kasutaja'];
 			else
 				echo "NotSignUp";
 		?>
+		</div>
 	</p>
 </body>
 </html>
