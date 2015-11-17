@@ -1,31 +1,23 @@
-﻿
+
 
     <div style="padding-left:200px;">
 	
 	  <div id="login_result"></div>
 	  
-      <form  id="form">	   
-        <h3 >Регистрация пользователя</h3>
+      <form  id="form_log">	   
+        <h3 >Вход пользователя</h3>
         <input type="text" name="login"   placeholder="Имя пользователя" autofocus >
         <p><input type="password" name="password"  placeholder="Пароль" ></p>
-        <p><input type="password" name="passwordN"  placeholder="Пароль еще раз" ></p>	
-        <p><button class="btn" type="submit">Регистрация</button></p>
+        <p><button class="btn" type="submit">Вход</button></p>
 		
       </form>
-	<p style="padding-top:10px;"><a id="andmed" href="#">Данные</a></p>	
-    </div> <!-- /container -->
+    </div>
 
-<div id="reg_result" style="padding-left:200px;"></div>
-	
-
-    <script src="js/jquery.min.js"></script>
- 
-  
     <script type="text/javascript">
 	$("form").submit(function() {
 		$.ajax({
            type: "POST",
-           url: "actions/reg.php",
+           url: "actions/log.php",
            data: $("form").serialize(),
            success: function(data)
            {
@@ -60,8 +52,8 @@
 		return false;
 	});
 	</script>
-	<script type="text/javascript">
-			$( "#andmed" ).click(function() {
-			document.location.href = "vaata.php";
-		});
-	</script>
+
+
+ 
+  
+   

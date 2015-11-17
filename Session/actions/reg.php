@@ -7,7 +7,7 @@ if (isset($_POST["login"]) && isset($_POST["password"]) && isset($_POST["passwor
 	$passwordN = $_POST['passwordN'];
 	if($login != "" && $password != "" && $password == $passwordN )
 	{
-		$_SESSION["rankU"] = $login;
+		$_SESSION["kasutaja"] = $login;
 		$_SESSION["passU"] = $password;	
 		echo "OK";
 	}

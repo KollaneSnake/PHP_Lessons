@@ -16,23 +16,26 @@
 		$(document).ready(function()
 			{		    
 		        $(".testSignUp").hide();
+		        $(".testSignIn").hide();
 		    });
 
 		$(document).ready(function(){
 		    $(".signIn").click(function(){
-		        $(".testSignIn").toggle();
+		    	$(".testSignUp").slideUp();
+		        $(".testSignIn").slideToggle();
 		    });
 		});
 
 		$(document).ready(function(){
 		    $(".signUp").click(function(){
-		        $(".testSignUp").toggle();
+		    	$(".testSignIn").slideUp();
+		        $(".testSignUp").slideToggle();
 		    });
 		});
 
 		$('.up').change(function(){		});
 
-		$('.live').change(function(){		});
+		$('.btn').change(function(){		});
 
 
 	</script>
@@ -57,24 +60,31 @@
 	?>
 	</div>
 
+	<div class='testSignIn'>
+		<?php 
+			include 'login.php';
+		?>
+	</div>
+
 	<div class='testSignUp'>
 		<?php 
 			include 'register.php';
-		 ?>
-
-
-
+		?>
 	</div>
 
+	
+
+	<div class='live'>
 	<p>Hello you are 
-		<div class='live'>
+		
 		<?php 
 			if(isset($_SESSION['kasutaja']))
 				echo $_SESSION['kasutaja'];
 			else
 				echo "NotSignUp";
 		?>
-		</div>
+		
 	</p>
+	</div>
 </body>
 </html>
