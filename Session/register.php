@@ -3,7 +3,7 @@
     <div style="padding-left:200px;">
 	
 	  
-      <form  id="form">	   
+      <form  id="form_reg">	   
         <h3 >Регистрация пользователя</h3>
         <div id="login_result"></div>
         <input type="text" name="login"   placeholder="Имя пользователя" autofocus >
@@ -16,43 +16,42 @@
       </form>
     </div> <!-- /container -->
 
-<div id="reg_result" style="padding-left:200px;"></div>
 	
 
     <script src="js/jquery.min.js"></script>
  
   
     <script type="text/javascript">
-	$("form").submit(function() {
+	$("#form_reg").submit(function() {
 		$.ajax({
            type: "POST",
            url: "actions/reg.php",
-           data: $("form").serialize(),
+           data: $("#form_reg").serialize(),
            success: function(data)
            {	
+           		$("#login_result").html('');
+           		$("#login_result1").html('');
+           		$("#login_result2").html('');
+
            		if(data==="OK!")
            		{
-           			header("Refresh:0");
+           			location.reload();
            		}
            		else if(data==="no login")
 				   {
 					$("#login_result").html('<div >Kasutajanimi on puudu!</div>');
-					$("#reg_result").html('');
 				   }
 			   else if(data==="no pass")
 				   {
-					$("#login_result1").html('<div >Salasõna on puudu!</div>');
-					$("#reg_result").html('');			
+					$("#login_result1").html('<div >Salasõna on puudu!</div>');		
 				   }
-				   else if(data==="nno pass match")
+				   else if(data==="no pass match")
 				   {
 					$("#login_result2").html('<div >Salasõna on vale! Kontrolli salasõna</div>');
-					form.password.value =form.passwordN.value= '';
-					$("#reg_result").html('');				
+					form.password.value =form.passwordN.value= '';				
 				   }			   
 				else {
-				$("#login_result").html('<div >Vale andmed!</div>');
-				$("#reg_result").html('');				
+				$("#login_result").html('<div >Vale andmed!</div>');			
 				}
            }
          });
