@@ -79,7 +79,10 @@
 		
 		<?php 
 			if(isset($_SESSION['kasutaja']))
-				echo $_SESSION['kasutaja'];
+			{
+				echo $_SESSION['kasutaja'] . "<br> Pass: ";
+				echo $_SESSION['passU'];
+			}
 			else
 				echo "NotSignUp";
 		?>
