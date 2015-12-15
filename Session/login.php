@@ -2,7 +2,7 @@
 
     <div style="padding-left:200px;">
 	
-	  <div id="login_result"></div>
+	  <div id="login_tulemus"></div>
 	  
       <form  id="form_log">	   
         <h3 >Вход пользователя</h3>
@@ -24,27 +24,21 @@
 			   if (data === "OK")
 			   {			 
 				$("#reg_result").html('<div >Kasutaja '+form.login.value +' registreeritud!</div>');
-				$("#login_result").html('');
+				$("#login_tulemus").html('');
 				form.login.value = form.password.value =form.passwordN.value= '';			   		   
 			   }
-			   else if(data==="no login")
+			   else if(data==="no such login")
 			   {
-				$("#login_result").html('<div >Kasutajanimi on puudu!</div>');
+				$("#login_tulemus").html('<div >Kasutajanime pole olemas!</div>');
 				$("#reg_result").html('');
 			   }
-			   else if(data==="no pass")
+			   else if(data==="enter pass")
 			   {
-				$("#login_result").html('<div >Salasõna on puudu!</div>');
+				$("#login_tulemus").html('<div >Salasõna on puudu!</div>');
 				$("#reg_result").html('');			
-			   }
-			   else if(data==="no passN")
-			   {
-				$("#login_result").html('<div >Salasõna on vale! Kontrolli salasõna</div>');
-				form.password.value =form.passwordN.value= '';
-				$("#reg_result").html('');				
 			   }			   
 				else {
-				$("#login_result").html('<div >Vale andmed!</div>');
+				$("#login_tulemus").html('<div >Error!/div>');
 				$("#reg_result").html('');				
 				}
            }
